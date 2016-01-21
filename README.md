@@ -16,3 +16,5 @@ And run as
 ``` bash
 python2 pyydnspod.py
 ```
+
+Supports both ipv4 and ipv6.
