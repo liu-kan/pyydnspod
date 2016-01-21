@@ -8,17 +8,20 @@ user_email='Your username to login dnspod.cn'
 user_password='your password'
 user_domain ='your Domain name'
 user_subdomain=['@','www'] #input your subdomain as list
-user_agent_str='PyDdnsClient/1.1.1 (liukan@126.com)'
+
+ip_add='http://www.zzsky.cn/code/ip/ip12.asp'
+ip_add6='http://whatismyv6.com'
+
 #user_subdomain为要设置的子域名，如www
 ttl='120' #免费用户最低120
 #ip_add='http://api.hostip.info/get_html.php'
-ip_add='http://www.zzsky.cn/code/ip/ip12.asp'
 #ip_add为获取ip的网址，该网址应该以最尽可能简洁的模式显示ip地址，
 #不能连接国外网络的可以使用'http://www.zzsky.cn/code/ip/ip12.asp'
 #也可以直接填入ip
 #设置结束
-pub_postdata={'login_email':user_email, 'login_password':user_password,'format':'json','lang':'en'}
 
+pub_postdata={'login_email':user_email, 'login_password':user_password,'format':'json','lang':'en'}
+user_agent_str='PyDdnsClient/1.1.1 (liukan@126.com)'
 p_ip=re.compile(r'^http.*')
 ip='127.0.0.1'
 if p_ip.search(ip_add)==None:
@@ -34,8 +37,6 @@ else:
         
         ip=ipr.group()
 print 'ip:',ip
-
-ip_add6='http://whatismyv6.com'
 
 p_ip=re.compile(r'^http.*')
 ip6='::1'
