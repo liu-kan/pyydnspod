@@ -111,7 +111,7 @@ for ri in user_subdomain:
             print json_str
             ldata=json.loads(json_str)
             if ldata["status"]["code"] !='1':
-                print ldata["status"]["code"],"erorrs happened ==========="
+                print ldata["status"]["code"],"errors happened ==========="
                 print ldata
 
         if len(ip6)>3 and rtype=="AAAA":
@@ -127,6 +127,6 @@ for ri in user_subdomain:
             print json_str
             ldata=json.loads(json_str)
             if ldata["status"]["code"] !='1':
-                print ldata["status"]["code"],"erorrs happened ==========="
+                print ldata["status"]["code"],"errors happened ==========="
                 print ldata
 
