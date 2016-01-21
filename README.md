@@ -1,7 +1,7 @@
 # pyydnspod
 Pyydnspod is a single file dnspod.cn api manipulator.
 
-You can easily update your server's dns records automatically.
+You can easily update your server's dns records automatically. Please setup your records on web console of https://www.dnspod.cn/ firstly.
 
 replace the code
 ``` python
