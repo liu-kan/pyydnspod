@@ -17,4 +17,4 @@ And run as
 python2 pyydnspod.py
 ```
 
-It gets ip automatically, supports both ipv4 and ipv6.
+It gets public ip addresses automatically, supports both ipv4 and ipv6.
