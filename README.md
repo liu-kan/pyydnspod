@@ -1,5 +1,5 @@
 # pyydnspod
-Pyydnspod is a single file dnspod.cn api manipulator, it supports both ipv4 and ipv6.
+Pyydnspod is a single file dnspod.cn api manipulator, it supports both **ipv4 and ipv6**.
 
 You can easily update your server's dns records automatically when your server's ip is changed. But please **setup your records on web console of https://www.dnspod.cn/  before you use it first time**.
 
