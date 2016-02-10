@@ -34,7 +34,6 @@ else:
         print '无法自动获取ip，请确认连接正常或换用合适的获取ip地址，或手工输入ip'
         sys.exit()
     else:
-        
         ip=ipr.group()
 print 'ip:',ip
 
@@ -50,13 +49,9 @@ else:
     ipr=re_ip6.search(ipv6str)
     if ipr==None:
         print '无法自动获取ipv6，请确认连接正常或换用合适的获取ip地址，或手工输入ip'
-        sys.exit()
     else:
-
         ip6=ipr.group()
 print 'ip6:',ip6
-
-
 
 httpsHandler = urllib2.HTTPSHandler()
 opener = urllib2.build_opener(httpsHandler)
