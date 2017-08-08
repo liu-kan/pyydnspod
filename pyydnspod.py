@@ -9,7 +9,7 @@ user_password='your password'
 user_domain ='your Domain name'
 user_subdomain=['@','www'] #input your subdomain as list
 
-ip_add='http://www.zzsky.cn/code/ip/ip12.asp'
+ip_add='http://ip-show.com'
 ip_add6='http://whatismyv6.com'
 
 #user_subdomain为要设置的子域名，如www
