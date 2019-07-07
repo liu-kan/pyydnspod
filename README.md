@@ -5,9 +5,9 @@ You can easily update your server's dns records automatically when your server's
 
 replace the code
 ``` python
-user_email='Your username to login dnspod.cn'
-user_password='your password'
-user_domain ='your Domain name'
+tid='Your token ID'
+token='Your Token'
+user_domain ='Your domain'
 user_subdomain=['@','www'] #input your subdomain as list
 ```
 at the beginning of .py file with your own setting.
