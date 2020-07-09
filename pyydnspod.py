@@ -112,7 +112,7 @@ if name_server=='dnspod.cn':
     query_args = dict(pub_postdata)
     query_args.update({'type':'mine'})
     request = urllib.request.Request(url_s)
-    request.add_data(urllib.parse.urlencode(query_args))
+    request.data=urllib.parse.urlencode(query_args).encode('utf-8')
     request.add_header('User-agent',user_agent_str)
     json_str=urllib.request.urlopen(request ).read()
     #r=urllib2.urlopen('https://dnsapi.cn/Domain.Id',encoded_args).read()
@@ -134,7 +134,7 @@ if name_server=='dnspod.cn':
         query_args = dict(pub_postdata)
         query_args.update({'domain_id':domain_id,'sub_domain':ri})
         request = urllib.request.Request(url_s)
-        request.add_data(urllib.parse.urlencode(query_args))
+        request.data=urllib.parse.urlencode(query_args).encode('utf-8')
         request.add_header('User-agent', user_agent_str)
         json_str=urllib.request.urlopen(request).read()
         #print json_str
@@ -152,7 +152,7 @@ if name_server=='dnspod.cn':
                     'record_line':'默认','value':ip}
                 query_args.update(q1)
                 request = urllib.request.Request(url_s)
-                request.add_data(urllib.parse.urlencode(query_args))
+                request.data=urllib.parse.urlencode(query_args).encode('utf-8')
                 request.add_header('User-agent', user_agent_str)
                 json_str=urllib.request.urlopen(request).read()
                 print(json_str)
@@ -168,7 +168,7 @@ if name_server=='dnspod.cn':
                     'record_line':'默认','value':ip6}
                 query_args.update(q1)
                 request = urllib.request.Request(url_s)
-                request.add_data(urllib.parse.urlencode(query_args))
+                request.data=urllib.parse.urlencode(query_args).encode('utf-8')
                 request.add_header('User-agent', user_agent_str)
                 json_str=urllib.request.urlopen(request).read()
                 print(json_str)
